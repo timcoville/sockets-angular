@@ -1,0 +1,13 @@
+
+
+CHAT COMP
+<form (submit)="sendMessage()">
+    <input type="text" name="message" [(ngModel)]="message">
+    <input type="submit">
+</form>
+<span *ngIf="messages.length > 0">
+<div *ngFor="let msg of messages">
+    <p>{{msg}}</p>
+</div>
+
+</span>
